@@ -1,0 +1,29 @@
+In C programming, loops are used to repeat a block of code as long
+as a specified condition is true. C provides three primary types of
+loops:
+
+for loop
+
+while loop
+
+do-while loop
+///////////////////
+
+The for loop is typically used when the number of iterations is known beforehand. It consists
+of three components: initialization, condition, and increment/decrement, all in a single line.
+
+Ex.: Counting from 1 to 5
+
+#include <stdio.h>
+
+int main() {
+
+for (int i = 1; i <= 5; i++) {
+
+printf("%d\n", i);
+
+}
+
+return 0;
+
+}
