@@ -1,0 +1,35 @@
+a user is asked to input their ATM PIN, and the loop continues to request the PIN until the correct one is entered.
+Since the user has to enter the PIN at least once, this is a good use case for the do-while loop [ATM PIN Validation]
+
+
+#include <stdio.h>
+
+int main() {
+
+int correct_pin = 1234; // Assume the correct PIN is 1234
+
+int entered_pin;
+
+// Using do-while loop to keep asking for the PIN until the correct one is entered
+
+do {
+
+printf("Please enter your 4-digit ATM PIN: ");
+
+scanf("%d", &entered_pin);
+
+if (entered_pin != correct_pin) { // != not equal
+
+printf("Incorrect PIN. Try again.\n");
+
+}
+
+} while (entered_pin != correct_pin);
+
+printf("PIN accepted. Access granted.\n");
+
+return 0;
+
+}
+
+Eg.
