@@ -1,0 +1,25 @@
+//Calculate Average Daily Steps for a Week
+
+#include <stdio.h>
+
+int main() {
+
+int steps, total_steps = 0;
+
+// Loop through 7 days to input and sum daily step counts
+
+for (int day = 1; day <= 7; day++) {
+
+printf("Enter the number of steps for day %d: ", day);
+
+scanf("%d", &steps);
+
+total_steps = total_steps + steps; // Add the steps to the total
+
+}
+
+// Calculate and display the average number of steps
+
+printf("Average steps per day: %.2f\n", total_steps / 7.0);
+
+return 0;
