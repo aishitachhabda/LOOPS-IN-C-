@@ -1,0 +1,32 @@
+A small town experiences a steady population growth of 2% every year. Write a program to simulate the
+population growth over 5 years, starting with an initial population.
+
+#include <stdio.h>
+
+int main() {
+
+int i;
+
+float population, growthRate = 0.02;
+
+// Input: Initial population
+
+printf("Enter the initial population of the town: ");
+
+scanf("%f", &population);
+
+// Using for loop to calculate population growth over 5 years
+
+for (i = 1; i <= 5; i++) {
+
+population = population + (population * growthRate);
+
+// population = population * (1 + growthRate); // 2% growth each year
+
+printf("Population at the end of year %d: %.2f\n", i, population);
+
+}
+
+return 0;
+
+}
