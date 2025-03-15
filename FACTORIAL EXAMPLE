@@ -1,0 +1,39 @@
+Write a Program to calculate factorial of the given number
+
+#include <stdio.h>
+
+int main() {
+
+int num, fact = 1;
+
+// Prompt the user to enter a number
+
+printf("Enter a number to find its factorial: ");
+
+scanf("%d", &num);
+
+// Check if the number is negative
+
+if (num < 0) {
+
+printf("Factorial of a negative number doesn't exist.\n");
+
+} else {
+
+// Calculate factorial directly in the main function
+
+for (int i = 1; i <= num; i++) {
+
+fact = fact*i; // Multiply fact by i
+
+}
+
+// Display the result
+
+printf("Factorial of %d is %d\n", num, fact);
+
+}
+
+return 0;
+
+}
