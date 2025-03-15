@@ -1,0 +1,33 @@
+Checking if a number is positive
+
+#include <stdio.h>
+
+int main() {
+
+int num; // Variable to store user input
+
+printf("Enter a positive number: ");
+
+scanf("%d", &num); // Take input from the user
+
+// Loop continues while the number is negative
+
+while (num < 0) {
+
+// Ask the user to input a positive number if current number is negative
+
+printf("Please enter a positive number: ");
+
+scanf("%d", &num); // Re-enter the number
+
+}
+
+// When a positive number is entered, print the number
+
+printf("Thank you, you entered: %d\n", num);
+
+return 0; 
+
+
+}
+// End of the program
