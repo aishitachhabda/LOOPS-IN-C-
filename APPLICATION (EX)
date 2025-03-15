@@ -1,0 +1,60 @@
+In a university, a student’s grade is calculated based on marks obtained in 5 subjects. Each subject is out of
+100 marks. The program calculates the total marks, average marks, and assigns a grade based on the average.
+
+#include <stdio.h>
+
+int main() {
+
+int i, marks, total = 0;
+
+float average;
+
+// Using for loop to input marks for 5 subjects
+
+for (i = 1; i <= 5; i++) {
+
+printf("Enter marks for subject %d (out of 100): ", i);
+
+scanf("%d", &marks);
+
+total = total + marks; // Sum of marks
+
+}
+
+// Calculating average marks
+
+average = total / 5.0;
+
+// Display total and average
+
+printf("Total marks: %d\n", total);
+
+printf("Average marks: %.2f\n", average);
+
+// Assign grade based on average
+
+if (average >= 90) {
+
+printf("Grade: A\n");
+
+} else if (average >= 80) {
+
+printf("Grade: B\n");
+
+} else if (average >= 70) {
+
+printf("Grade: C\n");
+
+} else if (average >= 60) {
+
+printf("Grade: D\n");
+
+} else {
+
+printf("Grade: F\n");
+
+}
+
+return 0;
+
+}
