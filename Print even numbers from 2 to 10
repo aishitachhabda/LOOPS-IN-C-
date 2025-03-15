@@ -1,0 +1,19 @@
+Print even numbers from 2 to 10
+
+#include <stdio.h>
+
+int main() {
+
+// Loop starts with i = 2 and increments by 2 each time (for even numbers)
+
+for (int i = 2; i <= 10; i += 2) {
+
+// Prints the current value of 'i' (which will be an even number)
+
+printf("%d\n", i);
+
+}
+
+return 0; // End of the program
+
+}
