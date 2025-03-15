@@ -1,0 +1,26 @@
+//Calculate Total Weekly Expenses
+
+#include <stdio.h>
+
+int main() {
+
+float expense, total_expense = 0;
+
+// Loop through 7 days to input and sum daily expenses
+
+for (int day = 1; day <= 7; day++) {
+
+printf("Enter the expense for day %d: ", day);
+
+scanf("%f", &expense);
+
+total_expense = total_expense + expense; // Add the daily expense to the total
+
+}
+
+// Display the total expense after the loop ends
+
+printf("Total expense for the month is: $%.2f\n", total_expense);
+
+return 0;
+}
